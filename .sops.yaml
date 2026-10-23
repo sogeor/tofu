@@ -1,0 +1,4 @@
+# fleet: add the cluster key and encrypted_regex: ^(data|stringData)$
+creation_rules:
+  - path_regex: \.sops\.ya?ml$
+    age: "age1m8jha5uv5y2tra2ljrgm9ud99yyff7p9edzdj2amjazp4rcpdshsy2dd47"

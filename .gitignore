@@ -1,0 +1,39 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+*~
+
+# Editors
+.fleet/
+.idea/
+.vscode/
+*.iml
+*.swo
+*.swp
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.agekey
+*.jks
+*.key
+*.keystore
+*.kubeconfig
+*.p12
+*.pem
+*.pfx
+admin.conf
+id_*
+!id_*.pub
+keys.txt
+kubeconfig*
+rclone.conf
+
+# Backups
+*.dec.yaml
+*.decrypted.*
+*.tar.zst
+*.tar.zst.age
+restore/

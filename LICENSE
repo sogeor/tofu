@@ -1,0 +1,249 @@
+Sogeor License 1.0 / Лицензия Sogeor 1.0
+SPDX-License-Identifier: LicenseRef-Sogeor-1.0
+
+Copyright (c) {{YEAR}} Georgii Sopin. All rights reserved. Все права защищены.
+
+This license is published in English and Russian. In case of any
+discrepancy between the versions, the Russian version prevails.
+Лицензия опубликована на английском и русском языках. При расхождении
+между версиями приоритет имеет русская версия.
+
+============================================================================
+ENGLISH VERSION
+============================================================================
+
+This is not an open-source license. The source code is published so that
+it can be read and reviewed. Except as expressly permitted below, no right
+to copy, use, modify, distribute or otherwise exploit the Software is granted.
+
+1. Definitions
+
+"Licensor" means Georgii Sopin, the holder of the copyright in the
+Software, together with its successors and assigns, including any legal
+entity (in particular Sogeor, once registered) to which the copyright in
+the Software is transferred.
+"Software" means the source code, documentation, configuration, images and
+other material in the repository in which this license is published, and
+any build output produced from them, excluding Third-Party Components.
+"Official Repository" means the repository of the Software operated by the
+Licensor at https://github.com/sogeor/{{REPO_NAME}}.
+"Contribution" means an issue, comment, pull request, patch or other
+material that You submit to the Official Repository.
+"You" means the person or legal entity exercising rights under this license.
+
+2. Permitted Use
+
+Subject to the terms of this license, the Licensor grants You a
+non-exclusive, non-transferable, non-sublicensable, revocable, royalty-free
+license, for the duration of copyright protection and worldwide, to:
+
+  (a) view, read and study the Software;
+  (b) clone or fork the Official Repository, and compile and run the Software
+      on devices under Your control, solely to prepare, test and submit
+      Contributions, or for Your personal, non-commercial study, provided
+      that the Software is not used in production, not made accessible to
+      third parties and not offered as a service;
+  (c) refer to the Software and link to the Official Repository.
+
+Forks created on GitHub through the functions provided by GitHub under the
+GitHub Terms of Service may be used only for the purposes listed in (b).
+
+3. Restrictions
+
+Except as expressly permitted in Section 2, You may not, in whole or in part:
+
+  (a) copy, publish, distribute, sell, rent, sublicense or otherwise make
+      the Software or copies of it available to any third party, whether or
+      not attribution is given;
+  (b) modify the Software or create derivative works, except Contributions
+      submitted to the Official Repository;
+  (c) incorporate the Software or any part of it into other software,
+      products, templates, courses or documentation;
+  (d) use the Software for any commercial purpose, in production, or to
+      provide a hosted or managed service;
+  (e) use the Software, or any dataset that contains it, to train, fine-tune
+      or evaluate machine-learning models, to the extent permitted by
+      applicable law;
+  (f) remove or alter copyright, license or attribution notices.
+
+Nothing in this license limits rights that cannot be limited under
+applicable law, including the right to quote reasonable excerpts for
+purposes of criticism, review, scientific or educational work with
+attribution of the author and the source.
+
+4. Contributions
+
+By submitting a Contribution You represent that You have the right to do
+so, and You grant the Licensor a perpetual, worldwide, non-exclusive,
+royalty-free, irrevocable license, with the right to sublicense, to use,
+reproduce, modify, distribute, publicly display and relicense the
+Contribution under any terms, including this license and any commercial
+license. You agree that the Licensor may transfer this license, in whole
+or in part, to any successor or to any legal entity to which the Licensor
+transfers the copyright in the Software, without further consent or
+notice; the license remains in force after such a transfer. Contributors may be required to accept the Contributor License
+Agreement published by the Licensor before a Contribution is merged.
+
+5. Third-Party Components
+
+Components developed by third parties remain subject to their own licenses.
+Nothing in this license restricts rights granted by those licenses.
+
+6. Trademarks
+
+This license grants no rights to the names, logos or trademarks of the
+Licensor, including "Sogeor".
+
+7. Termination
+
+Your rights under this license terminate automatically if You breach any
+of its terms. If this is Your first breach and You cure it within 30 days
+after receiving notice from the Licensor, Your rights are reinstated.
+Upon termination You must stop using the Software and delete all copies
+of it, including forks.
+
+8. Disclaimer of Warranty and Limitation of Liability
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE LICENSOR SHALL NOT BE
+LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM OR IN
+CONNECTION WITH THE SOFTWARE OR ITS USE.
+
+9. Other Licenses
+
+Any use not permitted by this license, including commercial use, requires
+a separate written license from the Licensor. Contact: legal@sogeor.com.
+
+10. Governing Law and Language
+
+This license is governed by the laws of the Russian Federation. Disputes
+are resolved by the courts at the Licensor's location. This license is
+published in English and Russian in this file. In case of any discrepancy
+between the versions, the Russian version prevails.
+
+============================================================================
+РУССКАЯ ВЕРСИЯ
+============================================================================
+
+Это не лицензия открытого программного обеспечения. Исходный код
+опубликован, чтобы его можно было читать и изучать. Сверх прямо разрешённого
+ниже никакие права на копирование, использование, изменение, распространение
+или иное использование Программы не предоставляются.
+
+Настоящая лицензия является открытой лицензией в смысле статьи 1286.1
+Гражданского кодекса Российской Федерации. Она считается принятой с момента
+начала использования Программы.
+
+1. Определения
+
+«Лицензиар» — Сопин Георгий Николаевич, обладатель исключительного права на
+Программу, а также его правопреемники, включая юридическое лицо (в
+частности, Sogeor после государственной регистрации), к которому перейдёт
+исключительное право на Программу.
+«Программа» — исходный код, документация, конфигурация, изображения и иные
+материалы репозитория, в котором опубликована настоящая лицензия, а также
+результаты их сборки, за исключением Сторонних компонентов.
+«Официальный репозиторий» — репозиторий Программы, который ведёт Лицензиар:
+https://github.com/sogeor/{{REPO_NAME}}.
+«Вклад» — issue, комментарий, pull request, патч или иной материал,
+направленный Вами в Официальный репозиторий.
+«Вы» — лицо, использующее права по настоящей лицензии.
+
+2. Разрешённое использование
+
+На условиях настоящей лицензии Лицензиар безвозмездно предоставляет Вам
+простую (неисключительную) лицензию без права передачи и сублицензирования,
+отзывную, на весь срок действия исключительного права, на территории всего
+мира, со следующими способами использования:
+
+  (a) просмотр, чтение и изучение Программы;
+  (b) клонирование или форк Официального репозитория, компиляция и запуск
+      Программы на устройствах под Вашим контролем исключительно для
+      подготовки, проверки и направления Вкладов либо для личного
+      некоммерческого изучения — при условии, что Программа не используется
+      в эксплуатации (production), не становится доступной третьим лицам и
+      не предоставляется как сервис;
+  (c) упоминание Программы и ссылки на Официальный репозиторий.
+
+Форки, созданные на GitHub средствами GitHub в соответствии с его Условиями
+использования, могут использоваться только для целей, указанных в подпункте
+(b).
+
+3. Ограничения
+
+Кроме прямо разрешённого в разделе 2, Вы не вправе полностью или частично:
+
+  (a) копировать, публиковать, распространять, продавать, сдавать в аренду,
+      сублицензировать или иным образом делать Программу или её копии
+      доступными третьим лицам — в том числе с указанием авторства;
+  (b) перерабатывать Программу или создавать производные произведения, за
+      исключением Вкладов в Официальный репозиторий;
+  (c) включать Программу или её части в другие программы, продукты, шаблоны,
+      курсы или документацию;
+  (d) использовать Программу в коммерческих целях, в эксплуатации или для
+      предоставления сервиса;
+  (e) использовать Программу или наборы данных, её содержащие, для обучения,
+      дообучения или оценки моделей машинного обучения — в пределах,
+      допускаемых применимым правом;
+  (f) удалять или изменять сведения об авторских правах, лицензии и
+      авторстве.
+
+Настоящая лицензия не ограничивает права, которые не могут быть ограничены
+по закону, включая право цитирования в критических, научных, учебных и
+информационных целях в оправданном объёме с указанием автора и источника
+(статья 1274 ГК РФ).
+
+4. Вклады
+
+Направляя Вклад, Вы подтверждаете, что вправе это делать, и предоставляете
+Лицензиару безвозмездную простую (неисключительную) безотзывную лицензию на
+весь срок действия исключительного права, на территории всего мира, с правом
+сублицензирования, на использование Вклада любыми способами, включая
+воспроизведение, переработку, распространение, публичный показ и
+лицензирование на любых условиях, в том числе на условиях настоящей лицензии
+и коммерческих лицензий. Вы соглашаетесь с тем, что Лицензиар вправе без
+дополнительного согласия и уведомления передать права по настоящему разделу
+полностью или частично своему правопреемнику или юридическому лицу, к
+которому перейдёт исключительное право на Программу (статьи 382, 391 и 1238
+ГК РФ); при такой передаче лицензия на Вклад сохраняет силу (пункт 7 статьи
+1235 ГК РФ). Перед принятием Вклада Лицензиар может потребовать принять
+Соглашение об участии (CLA).
+
+5. Сторонние компоненты
+
+Компоненты, созданные третьими лицами, используются на условиях их
+собственных лицензий. Настоящая лицензия не ограничивает права,
+предоставленные этими лицензиями.
+
+6. Товарные знаки
+
+Настоящая лицензия не предоставляет прав на наименования, логотипы и
+товарные знаки Лицензиара, включая «Sogeor».
+
+7. Прекращение
+
+Ваши права по настоящей лицензии прекращаются автоматически при нарушении
+любого её условия. Если нарушение первое и Вы устранили его в течение 30
+дней после уведомления Лицензиара, права восстанавливаются. После
+прекращения Вы обязаны прекратить использование Программы и удалить все её
+копии, включая форки.
+
+8. Отказ от гарантий и ограничение ответственности
+
+ПРОГРАММА ПРЕДОСТАВЛЯЕТСЯ «КАК ЕСТЬ», БЕЗ КАКИХ-ЛИБО ГАРАНТИЙ. В
+МАКСИМАЛЬНОЙ СТЕПЕНИ, ДОПУСКАЕМОЙ ЗАКОНОМ, ЛИЦЕНЗИАР НЕ НЕСЁТ
+ОТВЕТСТВЕННОСТИ ЗА ЛЮБОЙ УЩЕРБ, СВЯЗАННЫЙ С ПРОГРАММОЙ ИЛИ ЕЁ
+ИСПОЛЬЗОВАНИЕМ.
+
+9. Иные лицензии
+
+Любое использование, не разрешённое настоящей лицензией, в том числе
+коммерческое, требует отдельного письменного договора с Лицензиаром.
+Контакт: legal@sogeor.com.
+
+10. Применимое право и язык
+
+К настоящей лицензии применяется право Российской Федерации. Споры
+рассматриваются в суде по месту нахождения Лицензиара. Лицензия изложена
+в этом файле на английском и русском языках. При расхождении между
+версиями приоритет имеет русская версия.

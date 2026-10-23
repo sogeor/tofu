@@ -1,0 +1,51 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: detect-private-key
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.24.2
+    hooks:
+      - id: gitleaks
+
+  - repo: https://github.com/adrienverge/yamllint
+    rev: v1.35.1
+    hooks:
+      - id: yamllint
+        args: [-c, .yamllint.yaml]
+
+  - repo: https://github.com/DavidAnson/markdownlint-cli2
+    rev: v0.17.2
+    hooks:
+      - id: markdownlint-cli2
+
+  - repo: https://github.com/fsfe/reuse-tool
+    rev: v5.0.2
+    hooks:
+      - id: reuse-lint-file
+
+  - repo: local
+    hooks:
+      - id: forbid-unencrypted-secrets
+        name: Secrets must be SOPS-encrypted
+        language: system
+        files: \.ya?ml$
+        exclude: /templates/
+        entry: >-
+          bash -c 'rc=0; for f in "$@"; do
+          if grep -qE "^kind:\s*Secret\s*$" "$f" && ! grep -q "^sops:" "$f"; then
+          echo "Unencrypted Secret: $f"; rc=1; fi; done; exit $rc' --
+
+      - id: forbid-unencrypted-sops-files
+        name: SOPS files must be encrypted
+        language: system
+        files: \.sops\.ya?ml$
+        exclude: ^\.sops\.yaml$
+        entry: >-
+          bash -c 'rc=0; for f in "$@"; do
+          grep -q "^sops:" "$f" || { echo "Not encrypted: $f"; rc=1; }; done; exit $rc' --
