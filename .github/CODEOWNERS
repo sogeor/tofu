@@ -1,0 +1,8 @@
+# Every change requires review from the maintainers team.
+*                       @sogeor/maintainers
+
+# Changes to security-sensitive files are reviewed with extra care.
+/.github/               @sogeor/maintainers
+/.sops.yaml             @sogeor/maintainers
+/LICENSE*               @sogeor/maintainers
+/LICENSES/              @sogeor/maintainers

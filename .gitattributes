@@ -1,0 +1,25 @@
+* text=auto eol=lf
+
+# Windows scripts
+*.bat eol=crlf
+*.cmd eol=crlf
+
+# Binary
+*.age binary
+*.gif binary
+*.gz binary
+*.ico binary
+*.jar binary
+*.jpg binary
+*.pdf binary
+*.png binary
+*.webp binary
+*.zip binary
+*.zst binary
+
+# SOPS: git config diff.sopsdiffer.textconv "sops -d"
+*.sops.yaml diff=sopsdiffer
+*.sops.yml diff=sopsdiffer
+
+# Generated
+CHANGELOG.md linguist-generated=true
