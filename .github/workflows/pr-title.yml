@@ -5,4 +5,4 @@ on:
 permissions: { pull-requests: read }
 jobs:
   check:
-    uses: sogeor/workflows/.github/workflows/pr-title.yml@v1
+    uses: sogeor/workflows/.github/workflows/pr-title.yml@f3d239075a515eb750183009ac483e37043dd6da # v1

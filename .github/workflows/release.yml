@@ -3,5 +3,5 @@ on: { push: { branches: [master] } }
 permissions: { contents: read }
 jobs:
   release:
-    uses: sogeor/workflows/.github/workflows/release.yml@v1
+    uses: sogeor/workflows/.github/workflows/release.yml@f3d239075a515eb750183009ac483e37043dd6da # v1
     secrets: inherit
