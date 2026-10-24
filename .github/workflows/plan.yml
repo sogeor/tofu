@@ -1,0 +1,13 @@
+name: plan
+on:
+  pull_request:
+    paths: ["servers/**", ".github/workflows/plan.yml"]
+permissions: { contents: read }
+concurrency: { group: "plan-${{ github.event.pull_request.number }}", cancel-in-progress: true }
+jobs:
+  servers:
+    uses: sogeor/workflows/.github/workflows/tofu-plan-pr.yml@9bf70c2efed3619055210da0d0f70d9741850fcc # v1
+    with:
+      working-directory: servers
+    permissions: { contents: read, pull-requests: write }
+    secrets: inherit
