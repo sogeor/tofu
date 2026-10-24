@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.0.1](https://github.com/sogeor/tofu/compare/v1.0.0...v1.0.1) (2026-10-24)
+
+
+### Changed
+
+* pin sogeor/workflows action to 9bf70c2 ([#10](https://github.com/sogeor/tofu/issues/10)) ([bd0ade2](https://github.com/sogeor/tofu/commit/bd0ade257dbf1ef5a46f833895c8e8ec2b2f07a7))
+* update actions/checkout action to v7 ([#13](https://github.com/sogeor/tofu/issues/13)) ([f893f09](https://github.com/sogeor/tofu/commit/f893f091bb1edf9ef7d39b60818ef324087eb583))
+* update actions/create-github-app-token action to v3 ([#14](https://github.com/sogeor/tofu/issues/14)) ([53a4065](https://github.com/sogeor/tofu/commit/53a4065f5b89d5ca31d35dbddd8e8c435c85835a))
+* update github/codeql-action action to v4 ([#15](https://github.com/sogeor/tofu/issues/15)) ([077a21c](https://github.com/sogeor/tofu/commit/077a21c57ab9438a9c947e3e171a7613b1bd4bca))
+* update ossf/scorecard-action action to v2.5.0 ([#19](https://github.com/sogeor/tofu/issues/19)) ([77f5e21](https://github.com/sogeor/tofu/commit/77f5e21b9981c94ea77fec88184802b7d0e04c7b))
+* update pre-commit (non-major) ([#20](https://github.com/sogeor/tofu/issues/20)) ([4ac095e](https://github.com/sogeor/tofu/commit/4ac095ebb13a133e743e6bfda7a4e6fe1f965f2a))
+* update pre-commit hook fsfe/reuse-tool to v6 ([#16](https://github.com/sogeor/tofu/issues/16)) ([6d047a3](https://github.com/sogeor/tofu/commit/6d047a30ce6fe93fc8ed9e6060997ec828dcab75))
+* update pre-commit hook pre-commit/pre-commit-hooks to v6 ([#17](https://github.com/sogeor/tofu/issues/17)) ([93047c6](https://github.com/sogeor/tofu/commit/93047c6dba7c3f908d87d28ff86989b62195b941))
+
 ## 1.0.0 (2026-10-23)
 
 
