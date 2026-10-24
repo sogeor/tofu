@@ -8,7 +8,7 @@ permissions: { contents: read }
 concurrency: { group: deploy, cancel-in-progress: false }
 jobs:
   servers:
-    uses: sogeor/workflows/.github/workflows/tofu-deploy.yml@v1
+    uses: sogeor/workflows/.github/workflows/tofu-deploy.yml@9bf70c2efed3619055210da0d0f70d9741850fcc # v1
     with:
       working-directory: servers
     secrets: inherit

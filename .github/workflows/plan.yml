@@ -6,7 +6,7 @@ permissions: { contents: read }
 concurrency: { group: "plan-${{ github.event.pull_request.number }}", cancel-in-progress: true }
 jobs:
   servers:
-    uses: sogeor/workflows/.github/workflows/tofu-plan-pr.yml@v1
+    uses: sogeor/workflows/.github/workflows/tofu-plan-pr.yml@9bf70c2efed3619055210da0d0f70d9741850fcc # v1
     with:
       working-directory: servers
     permissions: { contents: read, pull-requests: write }
