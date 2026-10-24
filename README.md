@@ -29,7 +29,7 @@ State, plans, `*.tfvars` and `.envrc` are never committed. The state is stored i
 ## Background
 
 | Stack | Manages | State |
-|---|---|---|
+| --- | --- | --- |
 | `servers/` | inventory of existing servers: names, Ansible groups, SSH address and port, WireGuard address. Servers are described, not provisioned | `s3://master/tofu/servers.tfstate` |
 | `dns/` (planned) | Cloudflare zone settings, DNSSEC, static records, node records from `servers/` outputs | `s3://master/tofu/dns.tfstate` |
 | `openbao/` (planned) | OpenBao policies, auth methods, secret engines | `s3://master/tofu/openbao.tfstate` |
