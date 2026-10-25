@@ -5,6 +5,6 @@ on:
 permissions: { contents: read }
 jobs:
   iac:
-    uses: sogeor/workflows/.github/workflows/lint-iac.yml@c1895bcf1f56e3c884be3d7eae763475c44d614d # v1.1.4
+    uses: sogeor/workflows/.github/workflows/lint-iac.yml@e1e3a59337789cb469c440b4a68f6785338aac66 # v1.2.0
   docs:
-    uses: sogeor/workflows/.github/workflows/docs-lint.yml@c1895bcf1f56e3c884be3d7eae763475c44d614d # v1.1.4
+    uses: sogeor/workflows/.github/workflows/docs-lint.yml@e1e3a59337789cb469c440b4a68f6785338aac66 # v1.2.0
