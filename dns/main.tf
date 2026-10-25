@@ -31,9 +31,6 @@ locals {
       if contains(nonsensitive(local.servers[name].groups), group)
     }
   ]...)
-
-  # GitHub Pages: organization site at the apex and the documentation site.
-  pages_ipv4 = toset(["185.199.108.153", "185.199.109.153", "185.199.110.153", "185.199.111.153"])
 }
 
 resource "cloudflare_dns_record" "server" {
@@ -60,18 +57,42 @@ resource "cloudflare_dns_record" "service" {
   comment = local.comment
 }
 
-resource "cloudflare_dns_record" "pages_apex" {
-  for_each = local.pages_ipv4
-
+# The apex has no site: a proxied placeholder (TEST-NET-1, never reached) lets the
+# redirect rule below answer every request at the edge.
+resource "cloudflare_dns_record" "apex" {
   zone_id = var.zone_id
   name    = var.zone
   type    = "A"
-  content = each.key
+  content = "192.0.2.1"
   ttl     = 1
   proxied = true
   comment = local.comment
 }
 
+resource "cloudflare_ruleset" "redirect" {
+  zone_id = var.zone_id
+  name    = "redirect"
+  kind    = "zone"
+  phase   = "http_request_dynamic_redirect"
+
+  rules = [{
+    action      = "redirect"
+    description = "Apex to the GitHub organization"
+    enabled     = true
+    expression  = "(http.host eq \"${var.zone}\")"
+    action_parameters = {
+      from_value = {
+        preserve_query_string = false
+        status_code           = 301
+        target_url = {
+          value = "https://github.com/sogeor"
+        }
+      }
+    }
+  }]
+}
+
+# GitHub Pages: documentation site.
 resource "cloudflare_dns_record" "docs" {
   zone_id = var.zone_id
   name    = "docs.${var.zone}"
