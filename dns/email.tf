@@ -16,7 +16,8 @@ locals {
 
 # Enabling Email Routing makes Cloudflare create and lock the MX and SPF records of the apex.
 resource "cloudflare_email_routing_settings" "this" {
-  zone_id = var.zone_id
+  zone_id            = var.zone_id
+  support_subaddress = false
 }
 
 # Cloudflare sends a confirmation link to this address. Rules are rejected until it is opened.
