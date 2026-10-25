@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.2](https://github.com/sogeor/tofu/compare/v1.0.1...v1.0.2) (2026-10-25)
+
+
+### Changed
+
+* update sogeor/workflows action to v1.2.0 ([#24](https://github.com/sogeor/tofu/issues/24)) ([f30691e](https://github.com/sogeor/tofu/commit/f30691e34963dd1858b334e0e7251e108663074e))
+
 ## [1.0.1](https://github.com/sogeor/tofu/compare/v1.0.0...v1.0.1) (2026-10-24)
 
 
