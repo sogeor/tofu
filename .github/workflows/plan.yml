@@ -6,7 +6,7 @@ permissions: { contents: read }
 concurrency: { group: "plan-${{ github.event.pull_request.number }}", cancel-in-progress: true }
 jobs:
   servers:
-    uses: sogeor/workflows/.github/workflows/tofu-plan-pr.yml@e1e3a59337789cb469c440b4a68f6785338aac66 # v1.2.0
+    uses: sogeor/workflows/.github/workflows/tofu-plan-pr.yml@47d61181df754f7b85436533e1457866e233f4fc # v1.3.2
     with:
       working-directory: servers
     permissions: { contents: read, pull-requests: write }
@@ -14,7 +14,7 @@ jobs:
 
   # Plans against the applied servers state, not the servers changes of this pull request.
   dns:
-    uses: sogeor/workflows/.github/workflows/tofu-plan-pr.yml@e1e3a59337789cb469c440b4a68f6785338aac66 # v1.2.0
+    uses: sogeor/workflows/.github/workflows/tofu-plan-pr.yml@47d61181df754f7b85436533e1457866e233f4fc # v1.3.2
     with:
       working-directory: dns
     permissions: { contents: read, pull-requests: write }
