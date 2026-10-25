@@ -31,7 +31,7 @@ State, plans, `*.tfvars` and `.envrc` are never committed. The state is stored i
 | Stack | Manages | State |
 | --- | --- | --- |
 | `servers/` | inventory of existing servers: names, Ansible groups, SSH address and port, WireGuard address. Servers are described, not provisioned | `s3://master/tofu/servers.tfstate` |
-| `dns/` (planned) | Cloudflare zone settings, DNSSEC, static records, node records from `servers/` outputs | `s3://master/tofu/dns.tfstate` |
+| `dns/` | Cloudflare zone `sogeor.com`: DNSSEC, CAA, SPF/DMARC, GitHub Pages records, a record per server and service records (`master`, `status`) built from the `servers` state | `s3://master/tofu/dns.tfstate` |
 | `openbao/` (planned) | OpenBao policies, auth methods, secret engines | `s3://master/tofu/openbao.tfstate` |
 
 How the `servers` stack feeds Ansible:
@@ -64,6 +64,7 @@ Create `.envrc` in the repository root (ignored by Git) with values from the pas
 export AWS_ACCESS_KEY_ID="..."            # S3 user "tofu", Timeweb
 export AWS_SECRET_ACCESS_KEY="..."
 export TF_VAR_state_passphrase="..."      # OpenTofu state encryption
+export CLOUDFLARE_API_TOKEN="..."         # dns stack, zone-scoped token
 ```
 
 ```bash
@@ -97,7 +98,7 @@ sops servers/servers.sops.yaml            # opens the decrypted file in $EDITOR
   wg_address: 172.20.0.2                  # admin WireGuard, 172.20.0.0/20
 ```
 
-Then open a pull request, merge it and run `tofu plan` / `tofu apply`. Check the result from the Ansible repository:
+Then open a pull request, merge it and run `tofu plan` / `tofu apply`. The `dns` stack reads the applied `servers` state and adds `<name>.sogeor.com`, plus `master` for `control_plane` and `status` for `status` hosts; in CI it runs right after `servers`. Check the result from the Ansible repository:
 
 ```bash
 ansible-inventory --graph
