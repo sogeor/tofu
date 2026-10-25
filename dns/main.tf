@@ -103,6 +103,16 @@ resource "cloudflare_dns_record" "docs" {
   comment = local.comment
 }
 
+# GitHub organization domain verification (Settings → Verified & approved domains).
+resource "cloudflare_dns_record" "github_verification" {
+  zone_id = var.zone_id
+  name    = "_gh-sogeor-o.${var.zone}"
+  type    = "TXT"
+  content = "\"5f2bd0a29d\""
+  ttl     = 1
+  comment = local.comment
+}
+
 # Empty DKIM key for every selector: no message is signed for this domain.
 resource "cloudflare_dns_record" "dkim_null" {
   zone_id = var.zone_id

@@ -31,7 +31,7 @@ State, plans, `*.tfvars` and `.envrc` are never committed. The state is stored i
 | Stack | Manages | State |
 | --- | --- | --- |
 | `servers/` | inventory of existing servers: names, Ansible groups, SSH address and port, WireGuard address. Servers are described, not provisioned | `s3://master/tofu/servers.tfstate` |
-| `dns/` | Cloudflare zone `sogeor.com`: DNSSEC, CAA, DMARC and the null DKIM record, apex redirect to the GitHub organization, the `docs` GitHub Pages record, a record per server and service records (`master`, `status`) built from the `servers` state | `s3://master/tofu/dns.tfstate` |
+| `dns/` | Cloudflare zone `sogeor.com`: DNSSEC, CAA, DMARC and the null DKIM record, apex redirect to the GitHub organization, the `docs` GitHub Pages record, Email Routing of `security@`, `conduct@` and `legal@` to the address in `dns/dns.sops.yaml`, GitHub domain verification, a record per server and service records (`master`, `status`) built from the `servers` state | `s3://master/tofu/dns.tfstate` |
 | `openbao/` (planned) | OpenBao policies, auth methods, secret engines | `s3://master/tofu/openbao.tfstate` |
 
 How the `servers` stack feeds Ansible:
