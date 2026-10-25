@@ -3,5 +3,6 @@ on: { push: { branches: [master] } }
 permissions: { contents: read }
 jobs:
   release:
+    permissions: { attestations: write, contents: read, id-token: write }
     uses: sogeor/workflows/.github/workflows/release.yml@c1895bcf1f56e3c884be3d7eae763475c44d614d # v1.1.4
     secrets: inherit
