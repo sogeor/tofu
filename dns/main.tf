@@ -113,6 +113,17 @@ resource "cloudflare_dns_record" "github_verification" {
   comment = local.comment
 }
 
+# GitHub Pages domain verification (organization Settings → Pages): only sogeor
+# repositories may publish Pages sites on sogeor.com and its subdomains.
+resource "cloudflare_dns_record" "github_pages_verification" {
+  zone_id = var.zone_id
+  name    = "_github-pages-challenge-sogeor.${var.zone}"
+  type    = "TXT"
+  content = "\"1bc90887133a2b1032e0299de19c3c\""
+  ttl     = 1
+  comment = local.comment
+}
+
 # Empty DKIM key for every selector: no message is signed for this domain.
 resource "cloudflare_dns_record" "dkim_null" {
   zone_id = var.zone_id
