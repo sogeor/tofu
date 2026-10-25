@@ -82,16 +82,6 @@ resource "cloudflare_dns_record" "docs" {
   comment = local.comment
 }
 
-# The domain sends no mail; Email Routing (separate change) replaces this record.
-resource "cloudflare_dns_record" "spf" {
-  zone_id = var.zone_id
-  name    = var.zone
-  type    = "TXT"
-  content = "\"v=spf1 -all\""
-  ttl     = 1
-  comment = local.comment
-}
-
 # Empty DKIM key for every selector: no message is signed for this domain.
 resource "cloudflare_dns_record" "dkim_null" {
   zone_id = var.zone_id
