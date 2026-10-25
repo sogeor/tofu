@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.1.0](https://github.com/sogeor/tofu/compare/v1.0.2...v1.1.0) (2026-10-25)
+
+
+### Added
+
+* add dns stack for the Cloudflare zone ([#26](https://github.com/sogeor/tofu/issues/26)) ([7ee4c9e](https://github.com/sogeor/tofu/commit/7ee4c9e51c8eecfe12ba8363c8bb7e67aa1f3b3e))
+* redirect the apex to the GitHub organization ([#29](https://github.com/sogeor/tofu/issues/29)) ([4a7024d](https://github.com/sogeor/tofu/commit/4a7024d8a0c2534e929ee2c0797f59e565bb5e5a))
+* route role mailboxes with Cloudflare Email Routing ([#30](https://github.com/sogeor/tofu/issues/30)) ([ff48c93](https://github.com/sogeor/tofu/commit/ff48c93b7d8bd1392ce2015b53fa3ecf9ebd44f0))
+* verify sogeor.com for GitHub Pages ([#33](https://github.com/sogeor/tofu/issues/33)) ([0ec7fde](https://github.com/sogeor/tofu/commit/0ec7fdef0edf401c37f4a0fe766fc2419d60f6a8))
+
+
+### Fixed
+
+* drop email routing DNS resource for the apex ([#31](https://github.com/sogeor/tofu/issues/31)) ([e777eb9](https://github.com/sogeor/tofu/commit/e777eb9eb7749d7ce3a629583c44ef34d23701d1))
+* pin email routing subaddressing setting ([#32](https://github.com/sogeor/tofu/issues/32)) ([2d0d6ee](https://github.com/sogeor/tofu/commit/2d0d6eee4dd1404da08e40fa6947c70f7434efb2))
+
 ## [1.0.2](https://github.com/sogeor/tofu/compare/v1.0.1...v1.0.2) (2026-10-25)
 
 
