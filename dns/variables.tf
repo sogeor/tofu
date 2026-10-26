@@ -4,6 +4,12 @@ variable "state_passphrase" {
   sensitive   = true
 }
 
+variable "telegram_bot_id" {
+  description = "Numeric ID of the status bot (the part of its token before the colon; not secret)."
+  type        = string
+  default     = "8816680272"
+}
+
 variable "zone" {
   description = "Cloudflare zone name."
   type        = string
