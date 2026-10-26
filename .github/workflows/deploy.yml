@@ -8,7 +8,7 @@ permissions: { contents: read }
 concurrency: { group: deploy, cancel-in-progress: false }
 jobs:
   servers:
-    uses: sogeor/workflows/.github/workflows/tofu-deploy.yml@47d61181df754f7b85436533e1457866e233f4fc # v1.3.2
+    uses: sogeor/workflows/.github/workflows/tofu-deploy.yml@478bc92e70c7890679e516fdef6032aa2643e160 # v1.3.3
     with:
       working-directory: servers
     secrets: inherit
@@ -16,7 +16,7 @@ jobs:
   # Reads the servers state, so it runs after servers is applied.
   dns:
     needs: servers
-    uses: sogeor/workflows/.github/workflows/tofu-deploy.yml@47d61181df754f7b85436533e1457866e233f4fc # v1.3.2
+    uses: sogeor/workflows/.github/workflows/tofu-deploy.yml@478bc92e70c7890679e516fdef6032aa2643e160 # v1.3.3
     with:
       working-directory: dns
     secrets: inherit
