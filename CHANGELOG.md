@@ -1,5 +1,20 @@
 # Changelog
 
+## [1.2.0](https://github.com/sogeor/tofu/compare/v1.1.0...v1.2.0) (2026-10-28)
+
+
+### Added
+
+* proxy Telegram alerts through a Cloudflare Worker ([#37](https://github.com/sogeor/tofu/issues/37)) ([aec7877](https://github.com/sogeor/tofu/commit/aec78778f6a180449981bedf9524c4b58f2f6943))
+
+
+### Changed
+
+* update github/codeql-action digest to 9b32540 ([#39](https://github.com/sogeor/tofu/issues/39)) ([6fbabbd](https://github.com/sogeor/tofu/commit/6fbabbd251c603c0e8bbe472df10884fcc5feb0e))
+* update pre-commit hook davidanson/markdownlint-cli2 to v0.24.0 ([#38](https://github.com/sogeor/tofu/issues/38)) ([b24e256](https://github.com/sogeor/tofu/commit/b24e256365b0ffb39d6b8de32d425ca382579be7))
+* update sogeor/workflows action to v1.3.2 ([#34](https://github.com/sogeor/tofu/issues/34)) ([cd7f266](https://github.com/sogeor/tofu/commit/cd7f266dee7ea32fc1a51d7da7c49a00ce5a9555))
+* update sogeor/workflows action to v1.3.3 ([#36](https://github.com/sogeor/tofu/issues/36)) ([fba8d7b](https://github.com/sogeor/tofu/commit/fba8d7b805ff82650bccbed79cf4be3e3b95cff4))
+
 ## [1.1.0](https://github.com/sogeor/tofu/compare/v1.0.2...v1.1.0) (2026-10-25)
 
 
